@@ -28,7 +28,7 @@
 
 ## **Screenshot:**
 
-![Local Image](./p.png)
+![.Local Image](./p.png)
 
 ## **Installation:**
 
