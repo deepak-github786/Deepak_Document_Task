@@ -70,6 +70,9 @@ This directory is where you typically place your website's files, including HTML
 ~~~
 sudo vim /etc/apache2/apache2.conf
 ~~~
+~~~
+sudo apt install vim
+~~~
 
 **2. Restart Web Server**
 ~~~
