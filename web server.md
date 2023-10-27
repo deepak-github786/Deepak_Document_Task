@@ -94,6 +94,30 @@ sudo mkdir -p /var/www/basic/html
 ~~~
 sudo chown -R www-data:www-data /var/www/basic/html/
 ~~~
+
+~~~
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+
+<h1>Welcome to My Web Page</h1>
+
+<p>This is a basic HTML document.</p>
+
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+
+<a href="https://www.example.com">Visit Example.com</a>
+
+</body>
+</html>
+~~~
     
 **3. Create an HTML file:**
 ~~~
