@@ -94,39 +94,42 @@ sudo mkdir -p /var/www/basic/html
 ~~~
 sudo chown -R www-data:www-data /var/www/basic/html/
 ~~~
-
-~~~
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My First Web Page</title>
-</head>
-<body>
-
-<h1>Welcome to My Web Page</h1>
-
-<p>This is a basic HTML document.</p>
-
-<ul>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-</ul>
-
-<a href="https://www.example.com">Visit Example.com</a>
-
-</body>
-</html>
-~~~
     
 **3. Create an HTML file:**
 ~~~
 sudo vim /var/www/basic/html/index.html
 ~~~
+
+**Paste Below Code on it**
+
+~~~
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome To Noida</title>
+</head>
+<body>
+    <h1>Hello Deepak</h1>
+    <p>NOida Keen and Able</p>
+</body>
+</html>
+~~~
     
 **4. Create a Virtual Host Configuration File:**
 ~~~
 sudo vim /etc/apache2/sites-available/basic.conf
+~~~
+
+**Copy & Paste Below Code on it**
+
+~~~
+<VirtualHost *:80>
+   ServerAdmin webmaster@example.com
+   ServerName deepak.com
+   DocumentRoot /var/www/basic/html
+   ErrorLog ${APACHE_LOG_DIR}/error.log
+   CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
 ~~~
   
   ![Local Image](./conff.png)
@@ -159,6 +162,8 @@ sudo vim /etc/hosts
 **Add This Code Under hosts file in host address:**
 192.168.1.64 deepak.com
 
+**Where as 192.168.1.64 is my System IP** </br>
+**deepak.com**
 
 **Run on Web Browser:** http://deepak.com/
 
